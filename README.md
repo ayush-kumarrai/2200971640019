@@ -1,12 +1,47 @@
-# React + Vite
+URL Shortener - React Application
+Project Overview
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a full-featured URL shortener application built with Vite React and Material UI, developed for Afford Medical Technologies' Campus Hiring Evaluation. The application allows users to shorten URLs, track click statistics, and manage shortened links with expiration times.
 
-Currently, two official plugins are available:
+Key Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+URL Shortening: Convert long URLs into short, shareable links
+Custom Shortcodes: Optionally specify your own shortcode
+Link Expiration: Set custom expiration times (default: 30 minutes)
+Click Analytics: Track click sources, timestamps, and locations
+Multi-URL Processing: Shorten up to 5 URLs simultaneously
+Responsive Design: Works on all device sizes
+Link Management: View all created URLs and their statistics
+Technology Stack
 
-## Expanding the ESLint configuration
+Frontend: React 18
+Build Tool: Vite
+UI Framework: Material UI
+State Management: React Context API
+Routing: React Router 6
+Date Handling: date-fns
+Logging: Custom middleware with localStorage persistence
+Installation
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Clone the repository: git clone https://github.com/your-username/url-shortener.git
+Install dependencies: npm install
+Start the development server: npm run dev
+Open the application in your browser: http://127.0.0.1:3000
+
+Shortening URLs
+Enter your long URL in the input field 
+Optionally specify:Validity period (in minutes)
+Custom shortcode
+Click "Shorten URLs"
+Copy your new shortened URL from the results section
+Viewing Statistics
+
+Click the "View Statistics" button
+See all your shortened URLs with:
+Creation and expiration times
+Total click counts
+Detailed click analytics
+Accessing Shortened URLs
+
+Click on any shortened URL
+You'll be automatically redirected to the original URL after a brief delay
