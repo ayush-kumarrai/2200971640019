@@ -29,7 +29,6 @@ This is a full-featured URL shortener application built with Vite React and Mate
 1. Clone the repository:
    ```bash
    git clone https://github.com/ayush-kumarrai/2200971640019
-   cd url-shortener
    ```
 
 2. Install dependencies:
